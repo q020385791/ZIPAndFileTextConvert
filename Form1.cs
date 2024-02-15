@@ -1,5 +1,6 @@
 using System.IO.Compression;
 using System.Text;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CheckMarxScanConvert
 {
@@ -19,7 +20,34 @@ namespace CheckMarxScanConvert
 			textReplacements.Add("_blank", "_b1ank");
 			textReplacements.Add("https://", "~/");
 			textReplacements.Add("Import", "1mport");
-			
+
+			#endregion
+
+			#region Libs
+			//ViewModel
+			textReplacements.Add("password", "passw0rd");
+			//Services
+			textReplacements.Add("Password", "Passw0rd");
+			textReplacements.Add("adminPassword", "adminPassw0rd");
+			textReplacements.Add("passwd", "p0sswd");
+			textReplacements.Add("passwordhash", "passw0rdhash");
+			textReplacements.Add("Encryptpassword", "Encryptpassw0rd");
+			textReplacements.Add("YuorGooglePassword", "YuorGooglePassw0rd");
+			textReplacements.Add("Next", "N0xt");
+			textReplacements.Add("Close", "Cl0se");
+			textReplacements.Add("ReadAllBytes", "R0adAllBytes");
+			//Entity
+			textReplacements.Add("super_password", "super_passw0rd");
+
+			//DTO
+			textReplacements.Add("PasswordCheck", "Passw0rdCheck");
+			textReplacements.Add("NewPassword", "NewPassw0rd");
+			textReplacements.Add("Passwd", "P0sswd");
+			textReplacements.Add("PasswdCheck", "P0sswdCheck");
+
+			//Common
+			textReplacements.Add("shuffledPassword", "shuffledPassw0rd"); 
+
 			#endregion
 
 
